@@ -18,7 +18,14 @@ export default {
         const previous = async () => {
             await pokemonStore.getlistPokemon({previous : true})
         }  
-        pokemonStore.getlistPokemon()
+
+        const created = async () => {
+            if(pokemonStore.list_pokemon.length) {
+                return
+            }
+            await pokemonStore.getlistPokemon()
+        }
+        created()
         return {
             pokemonStore,
             carregarPokemon,
