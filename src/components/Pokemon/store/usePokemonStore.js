@@ -54,7 +54,16 @@ export const usePokemon = defineStore('Pokemon', {
                 return
             }
             console.log('pokemon sem id')
-        },        
+        },   
+        
+        
+        async             await pokemonStore.iniciarPokemon()
+        await pokemonStore.iniciarPokemon()
+            await pokemonStore.iniciarPokemon()
+        () {
+            this.pokemon = {}
+        },   
+        
     },
 })
 
