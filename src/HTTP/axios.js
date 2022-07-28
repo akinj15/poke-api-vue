@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 
-const API = axios.create({ baseURL: `https://pokeapi.co/api/v2/` });
+// const API = axios.create({ baseURL: `https://pokeapi.co/api/v2/` });
+const API = axios.create();
 
 /**
  * Metodos HTTP para interações Ajax

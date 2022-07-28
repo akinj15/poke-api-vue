@@ -4,10 +4,10 @@ import { createRouter, createWebHistory } from 'vue-router';
 import index from '../views/IndexComponent.vue' 
 
 //import de components
-import home from '../components/Home'
+import pokemon from '../components/Pokemon'
 
 const listRoutes = [
-    ...home.routes
+    ...pokemon.routes
 ] 
 
 const routes = [
