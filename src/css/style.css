@@ -3,6 +3,22 @@
 	padding : 0;
 	text-decoration: none;
 }
+button {
+	background-color: none;
+	border: none;
+}
+button:hover {
+	background-color: none;
+	box-shadow: none;
+	border: none;
+}
+
+/*  Reset */
+body {
+	background-color: #FB1B1B;
+	padding: 2em;
+}
+
 #app {
 	display:flex;
 	justify-content: center;
@@ -11,11 +27,14 @@
 .container {
 	max-width: 700px;
 	width: 80vw;
+	height: 80vh;
 	text-align: center;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background-color: #FFFFFF;
 }
+
 header {
  	width: 100%;
 }
@@ -24,4 +43,44 @@ header {
 }
 .buttons {
   	width: 100%;
+	padding: 1.5em;
+}
+.button {
+	margin: 1em;
+	padding : 10px;
+	background-color: #DFDFDF;
+	border-radius: 14px;
+	border: 2px solid #000000;
+	font-size: 1em;
+	font-weight: 600;
+	color: #000000;
+}
+.button:hover {
+	
+	padding : 10px;
+	background-color: #DFDFDF;
+	border-radius: 14px;
+	border: 2px solid #000000;
+	font-size: 1em;
+	font-weight: 600;
+	color: #000000;
+}
+.list-pokemon {
+	height:60% ;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+.item-pokemon {
+	width: 150px;
+	font-size: 1.2em;
+	border-radius: 12px;
+	border: 2px solid #FB1B1B;
+	padding: 2px;
+	margin: 5px;
+}
+
+.img-pokemon { 
+	width: 80%;
+
 }

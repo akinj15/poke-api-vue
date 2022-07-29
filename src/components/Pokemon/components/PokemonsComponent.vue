@@ -3,16 +3,16 @@
         <header>
             <h2>lista de pokemons</h2>
         </header>
-        <div class="pokemons">
+        <div class="list-pokemon ">
             <div v-for="item in pokemonStore.list_pokemon" :key="item.name" >
-                <div @click="carregarPokemon(item)">
+                <div class="item-pokemon" @click="carregarPokemon(item)">
                      {{ item.name }} 
                 </div>
             </div>
         </div>
         <div class="buttons">
-            <button @click="previous()">voltar</button>
-            <button @click="next()">next</button>
+            <button class="button" @click="previous()">voltar</button>
+            <button class="button" @click="next()">next</button>
         </div>
     </div>
 </template>
